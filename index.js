@@ -102,7 +102,7 @@ async function fazerUploadImagem() {
     dados.append('type', 'image/png')
 
     const resposta = await axios({
-        url: 'https://graph.facebook.com/v20.0/phone_number_id/media',
+        url: 'https://graph.facebook.com/v20.0/numero_telefone/media',
         method: 'post',
         headers: {
             'Authorization': `Bearer ${process.env.WHATSAPP_TOKEN}`
